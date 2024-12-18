@@ -15,6 +15,7 @@ export const ImageInput = ({
     if (file) {
       onInputChange(file);
     }
+    e.stopPropagation();
   };
 
   return (
@@ -23,6 +24,7 @@ export const ImageInput = ({
       ref={(e) => {
         imageInputRef.current = e;
       }}
+      onInput={onFileChange}
       onChange={onFileChange}
       className="hidden"
       accept="image/*"

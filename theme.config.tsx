@@ -20,10 +20,13 @@ const config = {
   faviconGlyph: '✦',
   head: function useHead() {
     const config = useConfig()
-    const title = `${config.title}` || 'jblazy components'
-    const description =
-      config.frontMatter.description || 'collection of jblazy components'
-    const image = config.frontMatter.image || '/og.jpeg'
+    // const title = `${config.title}` || 'jblazy components'
+    // const description =
+    //   config.frontMatter.description || 'collection of jblazy components'
+    // const image = config.frontMatter.image || '/og.jpeg'
+    const title = 'jblazy components'
+    const description = 'collection of jblazy components'
+    const image = '/og.jpeg'
     return (
       <>
         <title>{title}</title>

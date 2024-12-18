@@ -28,20 +28,11 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
-      <body>
-        <div>
-          <h1 className="x:grid text-3xl font-bold underline text-red-500">salut</h1>
-        </div>
-      </body>
-    </html>
-  )
   const navbar = (
     <Navbar
       logo={
         <div>
-          <b>jblazyu</b>{' '}
+          <b>jblazy</b>{' '}
           <span style={{ opacity: '60%' }}>components</span>
         </div>
       }
@@ -54,7 +45,7 @@ export default async function RootLayout({ children }) {
         <Layout
           // banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
           navbar={navbar}
-          footer={<Footer>salut</Footer>}
+          footer={<Footer></Footer>}
           editLink="Edit this page on GitHub"
           docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
