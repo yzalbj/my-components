@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next --turbopack",
     "build:registry": "npx tsx --tsconfig ./tsconfig-scripts.json ./src/scripts/build-registry.mts",
-    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind && npm run build:registry",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "start": "next start"
   },
   "dependencies": {
