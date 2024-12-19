@@ -19,7 +19,7 @@ import {
   registryItemTypeSchema,
   registrySchema,
 } from "../registry/schema"
-import { fixImport } from "./fix-import"
+import { fixImport } from "./fix-import.mts"
 
 const REGISTRY_PATH = path.join(process.cwd(), "public/r")
 
