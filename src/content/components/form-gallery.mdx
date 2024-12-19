@@ -1,4 +1,4 @@
-import { SingleImageFieldExample } from "@/example/image-field";
+import { UploadImageExample } from "@/example/upload-image";
 import { CodeExample } from "@/components/code-example";
 import FileContent from "@/components/ui/file-content";
 import CodeViewer from "@/components/ui/code-viewer";
@@ -8,16 +8,16 @@ There are two types of image fields:
 1. Single image field
 2. Multiple image field
 
-### \<SingleImageField />
+### \<UploadImage />
 
 <CodeExample
-  preview={<SingleImageFieldExample />}
-  code={<FileContent pathFile="example/image-field.tsx" title="Single image field" />}
+  preview={<UploadImageExample />}
+  code={<FileContent pathFile="example/upload-image.tsx" title="Single image field" />}
 />
 
 ---
 
-<CodeViewer directory="registry/ui/image-field" />
+<CodeViewer files={["registry/ui/upload-image.tsx"]} />
 
 
 {/* <File pathFile="my-components/image-field/single-image.tsx" title="Single image field" /> */}

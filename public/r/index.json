@@ -1,26 +1,17 @@
 [
   {
-    "name": "image-field",
+    "name": "upload-image",
     "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-visually-hidden"
+    ],
     "registryDependencies": [
       "button",
       "dialog"
     ],
     "files": [
       {
-        "path": "ui/image-field/index.ts",
-        "type": "registry:ui"
-      },
-      {
-        "path": "ui/image-field/image-preview.tsx",
-        "type": "registry:ui"
-      },
-      {
-        "path": "ui/image-field/single-image.tsx",
-        "type": "registry:ui"
-      },
-      {
-        "path": "ui/image-field/input.tsx",
+        "path": "ui/upload-image.tsx",
         "type": "registry:ui"
       }
     ]

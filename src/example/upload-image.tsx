@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { SingleImageField, ImageSrc } from "@/registry/ui/image-field";
+import { UploadImage, ImageSrc } from "@/registry/ui/upload-image";
 
-export function SingleImageFieldExample() {
+export function UploadImageExample() {
   const [value, setValue] = useState<ImageSrc>(undefined);
 
   return (
@@ -11,7 +11,7 @@ export function SingleImageFieldExample() {
       <span className="text-sm text-gray-500">
         {value instanceof File ? value.name : value ?? "No file selected"}
       </span>
-      <SingleImageField value={value} onChange={setValue} />
+      <UploadImage value={value} onChange={setValue} />
     </div>
   );
 }
