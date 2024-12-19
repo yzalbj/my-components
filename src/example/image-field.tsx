@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { SingleImageField, ImageSrc } from "@/my-components/image-field";
+import { SingleImageField, ImageSrc } from "@/registry/ui/image-field";
 
 export function SingleImageFieldExample() {
   const [value, setValue] = useState<ImageSrc>(undefined);
